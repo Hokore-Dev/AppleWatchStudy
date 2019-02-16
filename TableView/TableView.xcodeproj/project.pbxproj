@@ -1,0 +1,636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2753662B2217D77400F037D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2753662A2217D77400F037D7 /* AppDelegate.swift */; };
+		2753662D2217D77400F037D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2753662C2217D77400F037D7 /* ViewController.swift */; };
+		275366302217D77400F037D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2753662E2217D77400F037D7 /* Main.storyboard */; };
+		275366322217D77500F037D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 275366312217D77500F037D7 /* Assets.xcassets */; };
+		275366352217D77500F037D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 275366332217D77500F037D7 /* LaunchScreen.storyboard */; };
+		2753663A2217D77500F037D7 /* TableView WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 275366392217D77500F037D7 /* TableView WatchKit App.app */; };
+		275366402217D77500F037D7 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2753663E2217D77500F037D7 /* Interface.storyboard */; };
+		275366422217D77600F037D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 275366412217D77600F037D7 /* Assets.xcassets */; };
+		275366492217D77600F037D7 /* TableView WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 275366482217D77600F037D7 /* TableView WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2753664E2217D77600F037D7 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2753664D2217D77600F037D7 /* InterfaceController.swift */; };
+		275366502217D77600F037D7 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2753664F2217D77600F037D7 /* ExtensionDelegate.swift */; };
+		275366522217D77600F037D7 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275366512217D77600F037D7 /* NotificationController.swift */; };
+		275366542217D77600F037D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 275366532217D77600F037D7 /* Assets.xcassets */; };
+		275366652217D88F00F037D7 /* RowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275366642217D88F00F037D7 /* RowController.swift */; };
+		275366672217DBB600F037D7 /* DetailInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275366662217DBB600F037D7 /* DetailInterfaceController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2753663B2217D77500F037D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2753661F2217D77400F037D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 275366382217D77500F037D7;
+			remoteInfo = "TableView WatchKit App";
+		};
+		2753664A2217D77600F037D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2753661F2217D77400F037D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 275366472217D77600F037D7;
+			remoteInfo = "TableView WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2753665C2217D77600F037D7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				275366492217D77600F037D7 /* TableView WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		275366602217D77600F037D7 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				2753663A2217D77500F037D7 /* TableView WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		275366272217D77400F037D7 /* TableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2753662A2217D77400F037D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2753662C2217D77400F037D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2753662F2217D77400F037D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		275366312217D77500F037D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		275366342217D77500F037D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		275366362217D77500F037D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		275366392217D77500F037D7 /* TableView WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TableView WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2753663F2217D77500F037D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		275366412217D77600F037D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		275366432217D77600F037D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		275366482217D77600F037D7 /* TableView WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TableView WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2753664D2217D77600F037D7 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		2753664F2217D77600F037D7 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		275366512217D77600F037D7 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		275366532217D77600F037D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		275366552217D77600F037D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		275366562217D77600F037D7 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		275366642217D88F00F037D7 /* RowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowController.swift; sourceTree = "<group>"; };
+		275366662217DBB600F037D7 /* DetailInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInterfaceController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		275366242217D77400F037D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		275366452217D77600F037D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2753661E2217D77400F037D7 = {
+			isa = PBXGroup;
+			children = (
+				275366292217D77400F037D7 /* TableView */,
+				2753663D2217D77500F037D7 /* TableView WatchKit App */,
+				2753664C2217D77600F037D7 /* TableView WatchKit Extension */,
+				275366282217D77400F037D7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		275366282217D77400F037D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				275366272217D77400F037D7 /* TableView.app */,
+				275366392217D77500F037D7 /* TableView WatchKit App.app */,
+				275366482217D77600F037D7 /* TableView WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		275366292217D77400F037D7 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				2753662A2217D77400F037D7 /* AppDelegate.swift */,
+				2753662C2217D77400F037D7 /* ViewController.swift */,
+				2753662E2217D77400F037D7 /* Main.storyboard */,
+				275366312217D77500F037D7 /* Assets.xcassets */,
+				275366332217D77500F037D7 /* LaunchScreen.storyboard */,
+				275366362217D77500F037D7 /* Info.plist */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		2753663D2217D77500F037D7 /* TableView WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				2753663E2217D77500F037D7 /* Interface.storyboard */,
+				275366412217D77600F037D7 /* Assets.xcassets */,
+				275366432217D77600F037D7 /* Info.plist */,
+			);
+			path = "TableView WatchKit App";
+			sourceTree = "<group>";
+		};
+		2753664C2217D77600F037D7 /* TableView WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2753664D2217D77600F037D7 /* InterfaceController.swift */,
+				2753664F2217D77600F037D7 /* ExtensionDelegate.swift */,
+				275366512217D77600F037D7 /* NotificationController.swift */,
+				275366532217D77600F037D7 /* Assets.xcassets */,
+				275366552217D77600F037D7 /* Info.plist */,
+				275366562217D77600F037D7 /* PushNotificationPayload.apns */,
+				275366642217D88F00F037D7 /* RowController.swift */,
+				275366662217DBB600F037D7 /* DetailInterfaceController.swift */,
+			);
+			path = "TableView WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		275366262217D77400F037D7 /* TableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 275366612217D77600F037D7 /* Build configuration list for PBXNativeTarget "TableView" */;
+			buildPhases = (
+				275366232217D77400F037D7 /* Sources */,
+				275366242217D77400F037D7 /* Frameworks */,
+				275366252217D77400F037D7 /* Resources */,
+				275366602217D77600F037D7 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2753663C2217D77500F037D7 /* PBXTargetDependency */,
+			);
+			name = TableView;
+			productName = TableView;
+			productReference = 275366272217D77400F037D7 /* TableView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		275366382217D77500F037D7 /* TableView WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2753665D2217D77600F037D7 /* Build configuration list for PBXNativeTarget "TableView WatchKit App" */;
+			buildPhases = (
+				275366372217D77500F037D7 /* Resources */,
+				2753665C2217D77600F037D7 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2753664B2217D77600F037D7 /* PBXTargetDependency */,
+			);
+			name = "TableView WatchKit App";
+			productName = "TableView WatchKit App";
+			productReference = 275366392217D77500F037D7 /* TableView WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		275366472217D77600F037D7 /* TableView WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 275366592217D77600F037D7 /* Build configuration list for PBXNativeTarget "TableView WatchKit Extension" */;
+			buildPhases = (
+				275366442217D77600F037D7 /* Sources */,
+				275366452217D77600F037D7 /* Frameworks */,
+				275366462217D77600F037D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TableView WatchKit Extension";
+			productName = "TableView WatchKit Extension";
+			productReference = 275366482217D77600F037D7 /* TableView WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2753661F2217D77400F037D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = minjun.ha;
+				TargetAttributes = {
+					275366262217D77400F037D7 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					275366382217D77500F037D7 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					275366472217D77600F037D7 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 275366222217D77400F037D7 /* Build configuration list for PBXProject "TableView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2753661E2217D77400F037D7;
+			productRefGroup = 275366282217D77400F037D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				275366262217D77400F037D7 /* TableView */,
+				275366382217D77500F037D7 /* TableView WatchKit App */,
+				275366472217D77600F037D7 /* TableView WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		275366252217D77400F037D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				275366352217D77500F037D7 /* LaunchScreen.storyboard in Resources */,
+				275366322217D77500F037D7 /* Assets.xcassets in Resources */,
+				275366302217D77400F037D7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		275366372217D77500F037D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				275366422217D77600F037D7 /* Assets.xcassets in Resources */,
+				275366402217D77500F037D7 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		275366462217D77600F037D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				275366542217D77600F037D7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		275366232217D77400F037D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2753662D2217D77400F037D7 /* ViewController.swift in Sources */,
+				2753662B2217D77400F037D7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		275366442217D77600F037D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				275366522217D77600F037D7 /* NotificationController.swift in Sources */,
+				275366502217D77600F037D7 /* ExtensionDelegate.swift in Sources */,
+				275366652217D88F00F037D7 /* RowController.swift in Sources */,
+				2753664E2217D77600F037D7 /* InterfaceController.swift in Sources */,
+				275366672217DBB600F037D7 /* DetailInterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2753663C2217D77500F037D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 275366382217D77500F037D7 /* TableView WatchKit App */;
+			targetProxy = 2753663B2217D77500F037D7 /* PBXContainerItemProxy */;
+		};
+		2753664B2217D77600F037D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 275366472217D77600F037D7 /* TableView WatchKit Extension */;
+			targetProxy = 2753664A2217D77600F037D7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2753662E2217D77400F037D7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2753662F2217D77400F037D7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		275366332217D77500F037D7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				275366342217D77500F037D7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2753663E2217D77500F037D7 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2753663F2217D77500F037D7 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		275366572217D77600F037D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		275366582217D77600F037D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2753665A2217D77600F037D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U4C9BJB9VG;
+				INFOPLIST_FILE = "TableView WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = study.TableView.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		2753665B2217D77600F037D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U4C9BJB9VG;
+				INFOPLIST_FILE = "TableView WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = study.TableView.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		2753665E2217D77600F037D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U4C9BJB9VG;
+				IBSC_MODULE = TableView_WatchKit_Extension;
+				INFOPLIST_FILE = "TableView WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = study.TableView.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		2753665F2217D77600F037D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U4C9BJB9VG;
+				IBSC_MODULE = TableView_WatchKit_Extension;
+				INFOPLIST_FILE = "TableView WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = study.TableView.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		275366622217D77600F037D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U4C9BJB9VG;
+				INFOPLIST_FILE = TableView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = study.TableView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		275366632217D77600F037D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U4C9BJB9VG;
+				INFOPLIST_FILE = TableView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = study.TableView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		275366222217D77400F037D7 /* Build configuration list for PBXProject "TableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				275366572217D77600F037D7 /* Debug */,
+				275366582217D77600F037D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		275366592217D77600F037D7 /* Build configuration list for PBXNativeTarget "TableView WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2753665A2217D77600F037D7 /* Debug */,
+				2753665B2217D77600F037D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2753665D2217D77600F037D7 /* Build configuration list for PBXNativeTarget "TableView WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2753665E2217D77600F037D7 /* Debug */,
+				2753665F2217D77600F037D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		275366612217D77600F037D7 /* Build configuration list for PBXNativeTarget "TableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				275366622217D77600F037D7 /* Debug */,
+				275366632217D77600F037D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2753661F2217D77400F037D7 /* Project object */;
+}
