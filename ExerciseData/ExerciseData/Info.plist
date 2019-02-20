@@ -41,5 +41,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSHealthShareUsageDescription</key>
+	<string>EDIT THIS HealthKit Share Usage Description</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>EDIT THIS HealthKit Update Usage Description</string>
 </dict>
 </plist>

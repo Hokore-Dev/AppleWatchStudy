@@ -52,6 +52,7 @@ class InterfaceController: WKInterfaceController {
         healthStore.requestAuthorization(toShare: nil, read: objectTypes) { (success, error) in
             
             // Authorization request finished, hopefully the user allowed access!
+            print(success)
         }
         
         let calendar = Calendar.autoupdatingCurrent
