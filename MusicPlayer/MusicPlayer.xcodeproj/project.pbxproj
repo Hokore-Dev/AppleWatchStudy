@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27F3D863222AB31A000A172A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3D862222AB31A000A172A /* AppDelegate.swift */; };
+		27F3D865222AB31A000A172A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3D864222AB31A000A172A /* ViewController.swift */; };
+		27F3D868222AB31A000A172A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27F3D866222AB31A000A172A /* Main.storyboard */; };
+		27F3D86A222AB31A000A172A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27F3D869222AB31A000A172A /* Assets.xcassets */; };
+		27F3D86D222AB31A000A172A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27F3D86B222AB31A000A172A /* LaunchScreen.storyboard */; };
+		27F3D872222AB31B000A172A /* MusicPlayer WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 27F3D871222AB31B000A172A /* MusicPlayer WatchKit App.app */; };
+		27F3D878222AB31B000A172A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27F3D876222AB31B000A172A /* Interface.storyboard */; };
+		27F3D87A222AB31B000A172A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27F3D879222AB31B000A172A /* Assets.xcassets */; };
+		27F3D881222AB31B000A172A /* MusicPlayer WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 27F3D880222AB31B000A172A /* MusicPlayer WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		27F3D886222AB31B000A172A /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3D885222AB31B000A172A /* InterfaceController.swift */; };
+		27F3D888222AB31B000A172A /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3D887222AB31B000A172A /* ExtensionDelegate.swift */; };
+		27F3D88A222AB31B000A172A /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3D889222AB31B000A172A /* NotificationController.swift */; };
+		27F3D88C222AB31C000A172A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27F3D88B222AB31C000A172A /* Assets.xcassets */; };
+		27F3D89D222AB8B3000A172A /* audio.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27F3D89C222AB8B3000A172A /* audio.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		27F3D873222AB31B000A172A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27F3D857222AB31A000A172A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27F3D870222AB31B000A172A;
+			remoteInfo = "MusicPlayer WatchKit App";
+		};
+		27F3D882222AB31B000A172A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27F3D857222AB31A000A172A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27F3D87F222AB31B000A172A;
+			remoteInfo = "MusicPlayer WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		27F3D894222AB31C000A172A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				27F3D881222AB31B000A172A /* MusicPlayer WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27F3D898222AB31C000A172A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				27F3D872222AB31B000A172A /* MusicPlayer WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		27F3D85F222AB31A000A172A /* MusicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27F3D862222AB31A000A172A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		27F3D864222AB31A000A172A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		27F3D867222AB31A000A172A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		27F3D869222AB31A000A172A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		27F3D86C222AB31A000A172A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		27F3D86E222AB31A000A172A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27F3D871222AB31B000A172A /* MusicPlayer WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MusicPlayer WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27F3D877222AB31B000A172A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		27F3D879222AB31B000A172A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		27F3D87B222AB31B000A172A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27F3D880222AB31B000A172A /* MusicPlayer WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MusicPlayer WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27F3D885222AB31B000A172A /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		27F3D887222AB31B000A172A /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		27F3D889222AB31B000A172A /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		27F3D88B222AB31C000A172A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		27F3D88D222AB31C000A172A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27F3D88E222AB31C000A172A /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		27F3D89C222AB8B3000A172A /* audio.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = audio.wav; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27F3D85C222AB31A000A172A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27F3D87D222AB31B000A172A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27F3D856222AB31A000A172A = {
+			isa = PBXGroup;
+			children = (
+				27F3D861222AB31A000A172A /* MusicPlayer */,
+				27F3D875222AB31B000A172A /* MusicPlayer WatchKit App */,
+				27F3D884222AB31B000A172A /* MusicPlayer WatchKit Extension */,
+				27F3D860222AB31A000A172A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		27F3D860222AB31A000A172A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27F3D85F222AB31A000A172A /* MusicPlayer.app */,
+				27F3D871222AB31B000A172A /* MusicPlayer WatchKit App.app */,
+				27F3D880222AB31B000A172A /* MusicPlayer WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27F3D861222AB31A000A172A /* MusicPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				27F3D862222AB31A000A172A /* AppDelegate.swift */,
+				27F3D864222AB31A000A172A /* ViewController.swift */,
+				27F3D866222AB31A000A172A /* Main.storyboard */,
+				27F3D869222AB31A000A172A /* Assets.xcassets */,
+				27F3D86B222AB31A000A172A /* LaunchScreen.storyboard */,
+				27F3D86E222AB31A000A172A /* Info.plist */,
+			);
+			path = MusicPlayer;
+			sourceTree = "<group>";
+		};
+		27F3D875222AB31B000A172A /* MusicPlayer WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				27F3D876222AB31B000A172A /* Interface.storyboard */,
+				27F3D879222AB31B000A172A /* Assets.xcassets */,
+				27F3D87B222AB31B000A172A /* Info.plist */,
+			);
+			path = "MusicPlayer WatchKit App";
+			sourceTree = "<group>";
+		};
+		27F3D884222AB31B000A172A /* MusicPlayer WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				27F3D89C222AB8B3000A172A /* audio.wav */,
+				27F3D885222AB31B000A172A /* InterfaceController.swift */,
+				27F3D887222AB31B000A172A /* ExtensionDelegate.swift */,
+				27F3D889222AB31B000A172A /* NotificationController.swift */,
+				27F3D88B222AB31C000A172A /* Assets.xcassets */,
+				27F3D88D222AB31C000A172A /* Info.plist */,
+				27F3D88E222AB31C000A172A /* PushNotificationPayload.apns */,
+			);
+			path = "MusicPlayer WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27F3D85E222AB31A000A172A /* MusicPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27F3D899222AB31C000A172A /* Build configuration list for PBXNativeTarget "MusicPlayer" */;
+			buildPhases = (
+				27F3D85B222AB31A000A172A /* Sources */,
+				27F3D85C222AB31A000A172A /* Frameworks */,
+				27F3D85D222AB31A000A172A /* Resources */,
+				27F3D898222AB31C000A172A /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27F3D874222AB31B000A172A /* PBXTargetDependency */,
+			);
+			name = MusicPlayer;
+			productName = MusicPlayer;
+			productReference = 27F3D85F222AB31A000A172A /* MusicPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		27F3D870222AB31B000A172A /* MusicPlayer WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27F3D895222AB31C000A172A /* Build configuration list for PBXNativeTarget "MusicPlayer WatchKit App" */;
+			buildPhases = (
+				27F3D86F222AB31B000A172A /* Resources */,
+				27F3D894222AB31C000A172A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27F3D883222AB31B000A172A /* PBXTargetDependency */,
+			);
+			name = "MusicPlayer WatchKit App";
+			productName = "MusicPlayer WatchKit App";
+			productReference = 27F3D871222AB31B000A172A /* MusicPlayer WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		27F3D87F222AB31B000A172A /* MusicPlayer WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27F3D891222AB31C000A172A /* Build configuration list for PBXNativeTarget "MusicPlayer WatchKit Extension" */;
+			buildPhases = (
+				27F3D87C222AB31B000A172A /* Sources */,
+				27F3D87D222AB31B000A172A /* Frameworks */,
+				27F3D87E222AB31B000A172A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MusicPlayer WatchKit Extension";
+			productName = "MusicPlayer WatchKit Extension";
+			productReference = 27F3D880222AB31B000A172A /* MusicPlayer WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27F3D857222AB31A000A172A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = thechamcham;
+				TargetAttributes = {
+					27F3D85E222AB31A000A172A = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					27F3D870222AB31B000A172A = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					27F3D87F222AB31B000A172A = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 27F3D85A222AB31A000A172A /* Build configuration list for PBXProject "MusicPlayer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 27F3D856222AB31A000A172A;
+			productRefGroup = 27F3D860222AB31A000A172A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27F3D85E222AB31A000A172A /* MusicPlayer */,
+				27F3D870222AB31B000A172A /* MusicPlayer WatchKit App */,
+				27F3D87F222AB31B000A172A /* MusicPlayer WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27F3D85D222AB31A000A172A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27F3D86D222AB31A000A172A /* LaunchScreen.storyboard in Resources */,
+				27F3D86A222AB31A000A172A /* Assets.xcassets in Resources */,
+				27F3D868222AB31A000A172A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27F3D86F222AB31B000A172A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27F3D87A222AB31B000A172A /* Assets.xcassets in Resources */,
+				27F3D878222AB31B000A172A /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27F3D87E222AB31B000A172A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27F3D88C222AB31C000A172A /* Assets.xcassets in Resources */,
+				27F3D89D222AB8B3000A172A /* audio.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27F3D85B222AB31A000A172A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27F3D865222AB31A000A172A /* ViewController.swift in Sources */,
+				27F3D863222AB31A000A172A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27F3D87C222AB31B000A172A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27F3D88A222AB31B000A172A /* NotificationController.swift in Sources */,
+				27F3D888222AB31B000A172A /* ExtensionDelegate.swift in Sources */,
+				27F3D886222AB31B000A172A /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		27F3D874222AB31B000A172A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27F3D870222AB31B000A172A /* MusicPlayer WatchKit App */;
+			targetProxy = 27F3D873222AB31B000A172A /* PBXContainerItemProxy */;
+		};
+		27F3D883222AB31B000A172A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27F3D87F222AB31B000A172A /* MusicPlayer WatchKit Extension */;
+			targetProxy = 27F3D882222AB31B000A172A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		27F3D866222AB31A000A172A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27F3D867222AB31A000A172A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		27F3D86B222AB31A000A172A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27F3D86C222AB31A000A172A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		27F3D876222AB31B000A172A /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27F3D877222AB31B000A172A /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		27F3D88F222AB31C000A172A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		27F3D890222AB31C000A172A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		27F3D892222AB31C000A172A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MusicPlayer WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = thechamcham.MusicPlayer.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		27F3D893222AB31C000A172A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MusicPlayer WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = thechamcham.MusicPlayer.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		27F3D896222AB31C000A172A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = MusicPlayer_WatchKit_Extension;
+				INFOPLIST_FILE = "MusicPlayer WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = thechamcham.MusicPlayer.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		27F3D897222AB31C000A172A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = MusicPlayer_WatchKit_Extension;
+				INFOPLIST_FILE = "MusicPlayer WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = thechamcham.MusicPlayer.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		27F3D89A222AB31C000A172A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MusicPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = thechamcham.MusicPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		27F3D89B222AB31C000A172A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MusicPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = thechamcham.MusicPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27F3D85A222AB31A000A172A /* Build configuration list for PBXProject "MusicPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27F3D88F222AB31C000A172A /* Debug */,
+				27F3D890222AB31C000A172A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27F3D891222AB31C000A172A /* Build configuration list for PBXNativeTarget "MusicPlayer WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27F3D892222AB31C000A172A /* Debug */,
+				27F3D893222AB31C000A172A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27F3D895222AB31C000A172A /* Build configuration list for PBXNativeTarget "MusicPlayer WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27F3D896222AB31C000A172A /* Debug */,
+				27F3D897222AB31C000A172A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27F3D899222AB31C000A172A /* Build configuration list for PBXNativeTarget "MusicPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27F3D89A222AB31C000A172A /* Debug */,
+				27F3D89B222AB31C000A172A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 27F3D857222AB31A000A172A /* Project object */;
+}
