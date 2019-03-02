@@ -24,6 +24,7 @@
                                 <action selector="playAction" destination="AgC-eL-Hgc" id="0hm-WU-8C8"/>
                             </connections>
                         </button>
+                        <volumeControlView alignment="center" verticalAlignment="center" controlsLocalVolume="NO" id="9LE-mi-qUX"/>
                     </items>
                     <connections>
                         <outlet property="stopButton" destination="YPF-XL-WeK" id="u2m-2e-FxG"/>

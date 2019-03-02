@@ -13,10 +13,17 @@ import AVFoundation
 
 class InterfaceController: WKInterfaceController {
 
+    var wkPlayer: WKAudioFilePlayer!
     var player: AVAudioPlayer!
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
+        
+        let filePath = Bundle.main.path(forResource: "audio", ofType: "wav")!
+        let fileUrl = URL.init(fileURLWithPath: filePath)
+        let asset = WKAudioFileAsset.init(url: fileUrl)
+        let playerItem = WKAudioFilePlayerItem(asset: asset)
+        wkPlayer = WKAudioFilePlayer(playerItem: playerItem)
         
         // Set up the session.
         let session = AVAudioSession.sharedInstance()
@@ -62,10 +69,12 @@ class InterfaceController: WKInterfaceController {
     }
 
     @IBAction func stopAction() {
-        player.pause()
+        //player.pause()
+        wkPlayer.pause()
     }
     
     @IBAction func playAction() {
-        player.play()
+        //player.play()
+        wkPlayer.play()
     }
 }
