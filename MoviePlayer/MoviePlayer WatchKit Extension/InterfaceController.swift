@@ -13,12 +13,14 @@ import Foundation
 class InterfaceController: WKInterfaceController {
 
     @IBOutlet weak var movie: WKInterfaceMovie!
+    @IBOutlet weak var inlineMovie: WKInterfaceInlineMovie!
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
         let movieURL = Bundle.main.url(forResource: "izone", withExtension: "mp4")
         movie.setMovieURL(movieURL!)
+        inlineMovie.setMovieURL(movieURL!)
     }
     
     override func willActivate() {
@@ -27,6 +29,7 @@ class InterfaceController: WKInterfaceController {
     }
     
     override func didDeactivate() {
+        
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }

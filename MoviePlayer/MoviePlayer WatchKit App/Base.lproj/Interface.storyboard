@@ -15,8 +15,10 @@
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="MoviePlayer_WatchKit_App" customModuleProvider="target">
                     <items>
                         <movie width="1" height="100" alignment="center" verticalAlignment="center" posterImage="Image" id="VYK-FS-PUf"/>
+                        <inlineMovie width="1" height="100" alignment="left" posterImage="Image" id="moh-wQ-u2x"/>
                     </items>
                     <connections>
+                        <outlet property="inlineMovie" destination="moh-wQ-u2x" id="yFz-kO-hCS"/>
                         <outlet property="movie" destination="VYK-FS-PUf" id="aqw-WO-I7w"/>
                     </connections>
                 </controller>
