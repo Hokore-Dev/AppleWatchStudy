@@ -28,10 +28,22 @@
                     </items>
                     <connections>
                         <outlet property="stopButton" destination="YPF-XL-WeK" id="u2m-2e-FxG"/>
+                        <segue destination="SiC-Xp-sIS" kind="relationship" relationship="nextPage" id="hTk-SG-n5a"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="-153" y="218"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="r6u-OE-dWA">
+            <objects>
+                <controller id="SiC-Xp-sIS">
+                    <items>
+                        <nowPlayingView alignment="left" id="Ylr-P4-iHo"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="114" y="213"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">

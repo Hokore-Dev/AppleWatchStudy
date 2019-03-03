@@ -14,6 +14,8 @@ import AVFoundation
 class InterfaceController: WKInterfaceController {
 
     var wkPlayer: WKAudioFilePlayer!
+    var queuePlayer: WKAudioFileQueuePlayer!
+    var playerItem: WKAudioFilePlayerItem!
     var player: AVAudioPlayer!
     
     override func awake(withContext context: Any?) {
@@ -21,9 +23,19 @@ class InterfaceController: WKInterfaceController {
         
         let filePath = Bundle.main.path(forResource: "audio", ofType: "wav")!
         let fileUrl = URL.init(fileURLWithPath: filePath)
-        let asset = WKAudioFileAsset.init(url: fileUrl)
-        let playerItem = WKAudioFilePlayerItem(asset: asset)
-        wkPlayer = WKAudioFilePlayer(playerItem: playerItem)
+        let asset = WKAudioFileAsset.init(url: fileUrl, title: "밍모닝", albumTitle: "VLive", artist: "izone")
+        let playerItem1 = WKAudioFilePlayerItem(asset: asset)
+        
+        let filePath2 = Bundle.main.path(forResource: "audio2", ofType: "wav")!
+        let fileUrl2 = URL.init(fileURLWithPath: filePath2)
+        let asset2 = WKAudioFileAsset.init(url: fileUrl2, title: "쌈모닝", albumTitle: "VLive", artist: "izone")
+        let playerItem2 = WKAudioFilePlayerItem(asset: asset2)
+        
+        var playerItems = [WKAudioFilePlayerItem]()
+        playerItems.append(playerItem1)
+        playerItems.append(playerItem2)
+        queuePlayer = WKAudioFileQueuePlayer(items: playerItems)
+        //wkPlayer = WKAudioFilePlayer(playerItem: playerItem)
         
         // Set up the session.
         let session = AVAudioSession.sharedInstance()
@@ -70,11 +82,21 @@ class InterfaceController: WKInterfaceController {
 
     @IBAction func stopAction() {
         //player.pause()
-        wkPlayer.pause()
+        queuePlayer.pause()
     }
     
     @IBAction func playAction() {
         //player.play()
-        wkPlayer.play()
+        switch queuePlayer.status {
+        case .readyToPlay:
+            queuePlayer.play()
+            break
+        case .failed:
+            print("failed!")
+            break
+        case .unknown:
+            print("unknown!")
+        default: break
+        }
     }
 }
