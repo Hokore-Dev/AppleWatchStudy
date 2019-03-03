@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		278439B4222C2B8F00562180 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278439B3222C2B8F00562180 /* AppDelegate.swift */; };
+		278439B6222C2B8F00562180 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278439B5222C2B8F00562180 /* ViewController.swift */; };
+		278439B9222C2B8F00562180 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 278439B7222C2B8F00562180 /* Main.storyboard */; };
+		278439BB222C2B9100562180 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 278439BA222C2B9100562180 /* Assets.xcassets */; };
+		278439BE222C2B9100562180 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 278439BC222C2B9100562180 /* LaunchScreen.storyboard */; };
+		278439C3222C2B9100562180 /* Gesture WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 278439C2222C2B9100562180 /* Gesture WatchKit App.app */; };
+		278439C9222C2B9100562180 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 278439C7222C2B9100562180 /* Interface.storyboard */; };
+		278439CB222C2B9100562180 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 278439CA222C2B9100562180 /* Assets.xcassets */; };
+		278439D2222C2B9200562180 /* Gesture WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 278439D1222C2B9200562180 /* Gesture WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		278439D7222C2B9200562180 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278439D6222C2B9200562180 /* InterfaceController.swift */; };
+		278439D9222C2B9200562180 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278439D8222C2B9200562180 /* ExtensionDelegate.swift */; };
+		278439DB222C2B9200562180 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278439DA222C2B9200562180 /* NotificationController.swift */; };
+		278439DD222C2B9200562180 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 278439DC222C2B9200562180 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		278439C4222C2B9100562180 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 278439A8222C2B8F00562180 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 278439C1222C2B9100562180;
+			remoteInfo = "Gesture WatchKit App";
+		};
+		278439D3222C2B9200562180 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 278439A8222C2B8F00562180 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 278439D0222C2B9200562180;
+			remoteInfo = "Gesture WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		278439E5222C2B9200562180 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				278439D2222C2B9200562180 /* Gesture WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		278439E9222C2B9200562180 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				278439C3222C2B9100562180 /* Gesture WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		278439B0222C2B8F00562180 /* Gesture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gesture.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		278439B3222C2B8F00562180 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		278439B5222C2B8F00562180 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		278439B8222C2B8F00562180 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		278439BA222C2B9100562180 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		278439BD222C2B9100562180 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		278439BF222C2B9100562180 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		278439C2222C2B9100562180 /* Gesture WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gesture WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		278439C8222C2B9100562180 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		278439CA222C2B9100562180 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		278439CC222C2B9100562180 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		278439D1222C2B9200562180 /* Gesture WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Gesture WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		278439D6222C2B9200562180 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		278439D8222C2B9200562180 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		278439DA222C2B9200562180 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		278439DC222C2B9200562180 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		278439DE222C2B9200562180 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		278439DF222C2B9200562180 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		278439AD222C2B8F00562180 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		278439CE222C2B9200562180 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		278439A7222C2B8F00562180 = {
+			isa = PBXGroup;
+			children = (
+				278439B2222C2B8F00562180 /* Gesture */,
+				278439C6222C2B9100562180 /* Gesture WatchKit App */,
+				278439D5222C2B9200562180 /* Gesture WatchKit Extension */,
+				278439B1222C2B8F00562180 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		278439B1222C2B8F00562180 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				278439B0222C2B8F00562180 /* Gesture.app */,
+				278439C2222C2B9100562180 /* Gesture WatchKit App.app */,
+				278439D1222C2B9200562180 /* Gesture WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		278439B2222C2B8F00562180 /* Gesture */ = {
+			isa = PBXGroup;
+			children = (
+				278439B3222C2B8F00562180 /* AppDelegate.swift */,
+				278439B5222C2B8F00562180 /* ViewController.swift */,
+				278439B7222C2B8F00562180 /* Main.storyboard */,
+				278439BA222C2B9100562180 /* Assets.xcassets */,
+				278439BC222C2B9100562180 /* LaunchScreen.storyboard */,
+				278439BF222C2B9100562180 /* Info.plist */,
+			);
+			path = Gesture;
+			sourceTree = "<group>";
+		};
+		278439C6222C2B9100562180 /* Gesture WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				278439C7222C2B9100562180 /* Interface.storyboard */,
+				278439CA222C2B9100562180 /* Assets.xcassets */,
+				278439CC222C2B9100562180 /* Info.plist */,
+			);
+			path = "Gesture WatchKit App";
+			sourceTree = "<group>";
+		};
+		278439D5222C2B9200562180 /* Gesture WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				278439D6222C2B9200562180 /* InterfaceController.swift */,
+				278439D8222C2B9200562180 /* ExtensionDelegate.swift */,
+				278439DA222C2B9200562180 /* NotificationController.swift */,
+				278439DC222C2B9200562180 /* Assets.xcassets */,
+				278439DE222C2B9200562180 /* Info.plist */,
+				278439DF222C2B9200562180 /* PushNotificationPayload.apns */,
+			);
+			path = "Gesture WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		278439AF222C2B8F00562180 /* Gesture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 278439EA222C2B9200562180 /* Build configuration list for PBXNativeTarget "Gesture" */;
+			buildPhases = (
+				278439AC222C2B8F00562180 /* Sources */,
+				278439AD222C2B8F00562180 /* Frameworks */,
+				278439AE222C2B8F00562180 /* Resources */,
+				278439E9222C2B9200562180 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				278439C5222C2B9100562180 /* PBXTargetDependency */,
+			);
+			name = Gesture;
+			productName = Gesture;
+			productReference = 278439B0222C2B8F00562180 /* Gesture.app */;
+			productType = "com.apple.product-type.application";
+		};
+		278439C1222C2B9100562180 /* Gesture WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 278439E6222C2B9200562180 /* Build configuration list for PBXNativeTarget "Gesture WatchKit App" */;
+			buildPhases = (
+				278439C0222C2B9100562180 /* Resources */,
+				278439E5222C2B9200562180 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				278439D4222C2B9200562180 /* PBXTargetDependency */,
+			);
+			name = "Gesture WatchKit App";
+			productName = "Gesture WatchKit App";
+			productReference = 278439C2222C2B9100562180 /* Gesture WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		278439D0222C2B9200562180 /* Gesture WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 278439E2222C2B9200562180 /* Build configuration list for PBXNativeTarget "Gesture WatchKit Extension" */;
+			buildPhases = (
+				278439CD222C2B9200562180 /* Sources */,
+				278439CE222C2B9200562180 /* Frameworks */,
+				278439CF222C2B9200562180 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Gesture WatchKit Extension";
+			productName = "Gesture WatchKit Extension";
+			productReference = 278439D1222C2B9200562180 /* Gesture WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		278439A8222C2B8F00562180 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = thechamcham;
+				TargetAttributes = {
+					278439AF222C2B8F00562180 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					278439C1222C2B9100562180 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					278439D0222C2B9200562180 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 278439AB222C2B8F00562180 /* Build configuration list for PBXProject "Gesture" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 278439A7222C2B8F00562180;
+			productRefGroup = 278439B1222C2B8F00562180 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				278439AF222C2B8F00562180 /* Gesture */,
+				278439C1222C2B9100562180 /* Gesture WatchKit App */,
+				278439D0222C2B9200562180 /* Gesture WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		278439AE222C2B8F00562180 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				278439BE222C2B9100562180 /* LaunchScreen.storyboard in Resources */,
+				278439BB222C2B9100562180 /* Assets.xcassets in Resources */,
+				278439B9222C2B8F00562180 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		278439C0222C2B9100562180 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				278439CB222C2B9100562180 /* Assets.xcassets in Resources */,
+				278439C9222C2B9100562180 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		278439CF222C2B9200562180 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				278439DD222C2B9200562180 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		278439AC222C2B8F00562180 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				278439B6222C2B8F00562180 /* ViewController.swift in Sources */,
+				278439B4222C2B8F00562180 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		278439CD222C2B9200562180 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				278439DB222C2B9200562180 /* NotificationController.swift in Sources */,
+				278439D9222C2B9200562180 /* ExtensionDelegate.swift in Sources */,
+				278439D7222C2B9200562180 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		278439C5222C2B9100562180 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 278439C1222C2B9100562180 /* Gesture WatchKit App */;
+			targetProxy = 278439C4222C2B9100562180 /* PBXContainerItemProxy */;
+		};
+		278439D4222C2B9200562180 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 278439D0222C2B9200562180 /* Gesture WatchKit Extension */;
+			targetProxy = 278439D3222C2B9200562180 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		278439B7222C2B8F00562180 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				278439B8222C2B8F00562180 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		278439BC222C2B9100562180 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				278439BD222C2B9100562180 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		278439C7222C2B9100562180 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				278439C8222C2B9100562180 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		278439E0222C2B9200562180 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		278439E1222C2B9200562180 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		278439E3222C2B9200562180 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Gesture WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = thechamcham.Gesture.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		278439E4222C2B9200562180 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Gesture WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = thechamcham.Gesture.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		278439E7222C2B9200562180 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = Gesture_WatchKit_Extension;
+				INFOPLIST_FILE = "Gesture WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = thechamcham.Gesture.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		278439E8222C2B9200562180 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = Gesture_WatchKit_Extension;
+				INFOPLIST_FILE = "Gesture WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = thechamcham.Gesture.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		278439EB222C2B9200562180 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Gesture/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = thechamcham.Gesture;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		278439EC222C2B9200562180 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Gesture/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = thechamcham.Gesture;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		278439AB222C2B8F00562180 /* Build configuration list for PBXProject "Gesture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				278439E0222C2B9200562180 /* Debug */,
+				278439E1222C2B9200562180 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		278439E2222C2B9200562180 /* Build configuration list for PBXNativeTarget "Gesture WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				278439E3222C2B9200562180 /* Debug */,
+				278439E4222C2B9200562180 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		278439E6222C2B9200562180 /* Build configuration list for PBXNativeTarget "Gesture WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				278439E7222C2B9200562180 /* Debug */,
+				278439E8222C2B9200562180 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		278439EA222C2B9200562180 /* Build configuration list for PBXNativeTarget "Gesture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				278439EB222C2B9200562180 /* Debug */,
+				278439EC222C2B9200562180 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 278439A8222C2B8F00562180 /* Project object */;
+}
