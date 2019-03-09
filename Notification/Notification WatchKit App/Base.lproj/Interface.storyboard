@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Notification_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" title="Regist Notifiction" id="1vi-KS-MEz">
+                            <connections>
+                                <action selector="registAction" destination="AgC-eL-Hgc" id="ISX-l7-2Ge"/>
+                            </connections>
+                        </button>
+                        <label alignment="center" verticalAlignment="center" text="Label" id="ZqG-bd-g28"/>
+                    </items>
+                    <connections>
+                        <outlet property="pushResult" destination="ZqG-bd-g28" id="hlk-5N-gmM"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <imageView width="1" alignment="left" image="push_image" id="kCr-0l-oid"/>
+                        <label alignment="center" text="쪼율 왔어율" textAlignment="center" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="sashColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </notificationCategory>
+                    <color key="backgroundColor" red="0.77989119289999997" green="0.21275633569999999" blue="0.19602227210000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="Csi-uf-66O" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="RdN-oT-g6s"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="712"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="h0T-b8-FCS">
+            <objects>
+                <controller id="Csi-uf-66O" customClass="NotificationController" customModule="Notification_WatchKit_Extension">
+                    <items>
+                        <imageView width="1" alignment="left" image="push_image" id="vLV-Wt-KSA"/>
+                        <label alignment="center" text="쪼율 왔어율" id="uYS-ca-n2n"/>
+                    </items>
+                    <connections>
+                        <outlet property="descLabel" destination="uYS-ca-n2n" id="khh-pq-wrd"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="510" y="712"/>
+        </scene>
+    </scenes>
+</document>
