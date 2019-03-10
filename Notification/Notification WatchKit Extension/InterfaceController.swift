@@ -17,10 +17,11 @@ class InterfaceController: WKInterfaceController, UNUserNotificationCenterDelega
         super.awake(withContext: context)
         
         let center = UNUserNotificationCenter.current()
-        center.delegate = self
         center.requestAuthorization(options: [.alert,.sound,.badge], completionHandler: {didAllow,Error in
             print(didAllow)
         })
+        
+        center.delegate = self
         
         let firstAction = UNNotificationAction(identifier: "FIRST_ACTION",
                                                 title: "귀여운 쪼율 보러가기",

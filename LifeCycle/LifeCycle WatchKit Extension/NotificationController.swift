@@ -1,8 +1,8 @@
 //
 //  NotificationController.swift
-//  Notification WatchKit Extension
+//  LifeCycle WatchKit Extension
 //
-//  Created by minjun.ha on 07/03/2019.
+//  Created by minjun.ha on 10/03/2019.
 //  Copyright © 2019 thechamcham. All rights reserved.
 //
 
@@ -13,7 +13,6 @@ import UserNotifications
 
 class NotificationController: WKUserNotificationInterfaceController {
 
-    @IBOutlet weak var descLabel: WKInterfaceLabel!
     override init() {
         // Initialize variables here.
         super.init()
@@ -35,7 +34,5 @@ class NotificationController: WKUserNotificationInterfaceController {
         // This method is called when a notification needs to be presented.
         // Implement it if you use a dynamic notification interface.
         // Populate your dynamic notification interface as quickly as possible.
-        
-        descLabel.setText(notification.request.content.body)
     }
 }
